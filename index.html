@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Color picker</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <style>
+        .box{
+            display: inline-block;
+        }
+    </style>
+  </head>
+  
+  <body>
+      <center>
+      <div
+        class="box"
+        id="red"
+        style="width: 50px; height: 50px; background-color: red"
+      ></div>
+      <div
+        class="box"
+        id="orange"
+        style="width: 50px; height: 50px; background-color: orange"
+      ></div>
+      <div
+        class="box"
+        id="blue"
+        style="width: 50px; height: 50px; background-color: blue"
+      ></div>
+      <div
+        class="box"
+        id="yellow"
+        style="width: 50px; height: 50px; background-color: yellow"
+      ></div>
+   
+    </center>
+    <script>
+      $("#red").click(function () {
+        $("body").css("background-color", "red");
+      });
+      $("#orange").click(function () {
+        $("body").css("background-color", "orange");
+      });
+      $("#blue").click(function () {
+        $("body").css("background-color", "blue");
+      });
+      $("#yellow").click(function () {
+        $("body").css("background-color", "yellow");
+      });
+    </script>
+  </body>
+</html>
